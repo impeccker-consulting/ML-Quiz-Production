@@ -1,0 +1,25 @@
+.venv/
+__pycache__/
+*.pyc
+
+.streamlit/secrets.toml
+
+attempts/
+datasets/
+results/
+submissions/
+
+evaluate_submission.py
+faculty_scoring.py
+validate_submission.py
+Student_Dataset_ID_List.csv
+"app old.py"
+app_BACKUP_BEFORE_ROUTING_FIX.py
+python
+
+quiz/__pycache__/
+quiz/*.pyc
+quiz/config.json.step7_backup
+quiz/config.json.step9_backup
+quiz/config_exam_backup.json
+app old.py

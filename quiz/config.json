@@ -1,0 +1,10 @@
+{
+  "Quiz_ID": "ML_QUIZ_TEST",
+  "Quiz_Title": "ML Quiz - Local Test",
+  "Start_DateTime": "2026-09-13T00:00:00+05:30",
+  "End_DateTime": "2026-09-30T23:59:00+05:30",
+  "Duration_Minutes": 5,
+  "Total_Marks": 20,
+  "Status": "ACTIVE",
+  "Access_Code_Required": true
+}
