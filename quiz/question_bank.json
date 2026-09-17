@@ -1450,6 +1450,732 @@
       ],
       "Marks": 1,
       "Variant_Enabled": false
+    },
+    {
+      "Question_ID": "C17",
+      "Question_Family_ID": "C17",
+      "Variant_ID": "V01",
+      "Topic": "Classification",
+      "Business_Domain": "Banking",
+      "Difficulty": "Easy",
+      "Response_Type": "Single",
+      "Question_Type": "Precision",
+      "Visual_Type": "Confusion Matrix",
+      "Question_Text": "A bank's loan model identifies 120 applicants as likely to default. Of these, 90 actually default. What is the model's precision for the positive class?",
+      "Options": [
+        {
+          "Option_ID": "A",
+          "Text": "60%"
+        },
+        {
+          "Option_ID": "B",
+          "Text": "75%"
+        },
+        {
+          "Option_ID": "C",
+          "Text": "80%"
+        },
+        {
+          "Option_ID": "D",
+          "Text": "90%"
+        }
+      ],
+      "Correct_Response": [
+        "B"
+      ],
+      "Marks": 1,
+      "Variant_Enabled": false
+    },
+    {
+      "Question_ID": "C18",
+      "Question_Family_ID": "C18",
+      "Variant_ID": "V01",
+      "Topic": "Classification",
+      "Business_Domain": "Entertainment",
+      "Difficulty": "Easy",
+      "Response_Type": "Multi",
+      "Question_Type": "Business Scenario",
+      "Visual_Type": "",
+      "Question_Text": "A streaming company predicts whether a subscriber will cancel. Missing a subscriber who is genuinely going to cancel is considered costly. Which statements are reasonable? Select all that apply.",
+      "Options": [
+        {
+          "Option_ID": "A",
+          "Text": "Recall is an important metric to consider."
+        },
+        {
+          "Option_ID": "B",
+          "Text": "False negatives deserve attention."
+        },
+        {
+          "Option_ID": "C",
+          "Text": "Accuracy alone may not reflect the business objective."
+        },
+        {
+          "Option_ID": "D",
+          "Text": "Precision becomes mathematically irrelevant."
+        }
+      ],
+      "Correct_Response": [
+        "A",
+        "B",
+        "C"
+      ],
+      "Marks": 1,
+      "Variant_Enabled": false
+    },
+    {
+      "Question_ID": "C19",
+      "Question_Family_ID": "C19",
+      "Variant_ID": "V01",
+      "Topic": "Classification",
+      "Business_Domain": "Cybersecurity",
+      "Difficulty": "Moderate",
+      "Response_Type": "Single",
+      "Question_Type": "Threshold",
+      "Visual_Type": "Probability Distribution",
+      "Question_Text": "A fraud model assigns a customer a fraud probability of 0.38. The current classification threshold is 0.40. The threshold is then reduced to 0.30. What happens to this customer's predicted class?",
+      "Options": [
+        {
+          "Option_ID": "A",
+          "Text": "It changes from non-fraud to fraud."
+        },
+        {
+          "Option_ID": "B",
+          "Text": "It changes from fraud to non-fraud."
+        },
+        {
+          "Option_ID": "C",
+          "Text": "It remains non-fraud."
+        },
+        {
+          "Option_ID": "D",
+          "Text": "The model must be retrained."
+        }
+      ],
+      "Correct_Response": [
+        "A"
+      ],
+      "Marks": 1,
+      "Variant_Enabled": false
+    },
+    {
+      "Question_ID": "C20",
+      "Question_Family_ID": "C20",
+      "Variant_ID": "V01",
+      "Topic": "Classification",
+      "Business_Domain": "Healthcare",
+      "Difficulty": "Moderate",
+      "Response_Type": "Multi",
+      "Question_Type": "Confusion Matrix",
+      "Visual_Type": "Confusion Matrix",
+      "Question_Text": "A disease-screening model produces the following confusion-matrix counts: TP = 84, FN = 16, FP = 24, TN = 176. Which statements are reasonable? Select all that apply.",
+      "Options": [
+        {
+          "Option_ID": "A",
+          "Text": "The model correctly identifies 84 positive cases."
+        },
+        {
+          "Option_ID": "B",
+          "Text": "Sixteen positive cases are missed."
+        },
+        {
+          "Option_ID": "C",
+          "Text": "Every positive prediction is correct."
+        },
+        {
+          "Option_ID": "D",
+          "Text": "False positives are present."
+        }
+      ],
+      "Correct_Response": [
+        "A",
+        "B",
+        "D"
+      ],
+      "Marks": 1,
+      "Variant_Enabled": false
+    },
+    {
+      "Question_ID": "C21",
+      "Question_Family_ID": "C21",
+      "Variant_ID": "V01",
+      "Topic": "Classification",
+      "Business_Domain": "Marketing",
+      "Difficulty": "Moderate",
+      "Response_Type": "Multi",
+      "Question_Type": "Model Comparison",
+      "Visual_Type": "Metrics Table",
+      "Question_Text": "Two customer-response models produce the following results: Model A: Precision = 0.82, Recall = 0.55. Model B: Precision = 0.70, Recall = 0.76. The company wants to identify more of the customers who will actually respond. Which statements are reasonable? Select all that apply.",
+      "Options": [
+        {
+          "Option_ID": "A",
+          "Text": "Model B has higher recall."
+        },
+        {
+          "Option_ID": "B",
+          "Text": "Model A has higher precision."
+        },
+        {
+          "Option_ID": "C",
+          "Text": "Model B necessarily has higher accuracy."
+        },
+        {
+          "Option_ID": "D",
+          "Text": "The business objective makes recall particularly relevant."
+        }
+      ],
+      "Correct_Response": [
+        "A",
+        "B",
+        "D"
+      ],
+      "Marks": 1,
+      "Variant_Enabled": false
+    },
+    {
+      "Question_ID": "C22",
+      "Question_Family_ID": "C22",
+      "Variant_ID": "V01",
+      "Topic": "Classification",
+      "Business_Domain": "Retail",
+      "Difficulty": "Moderate",
+      "Response_Type": "Multi",
+      "Question_Type": "ROC + Business",
+      "Visual_Type": "ROC Curve",
+      "Question_Text": "A ROC plot compares two retail-response models. Model A has ROC-AUC = 0.79 and Model B has ROC-AUC = 0.86. Which statements are reasonable? Select all that apply.",
+      "Options": [
+        {
+          "Option_ID": "A",
+          "Text": "Model B has better overall discrimination according to ROC-AUC."
+        },
+        {
+          "Option_ID": "B",
+          "Text": "AUC alone specifies the best operating threshold for the business."
+        },
+        {
+          "Option_ID": "C",
+          "Text": "Threshold-specific metrics may still need to be examined."
+        },
+        {
+          "Option_ID": "D",
+          "Text": "The consequences of false positives and false negatives may matter."
+        }
+      ],
+      "Correct_Response": [
+        "A",
+        "C",
+        "D"
+      ],
+      "Marks": 1,
+      "Variant_Enabled": false
+    },
+    {
+      "Question_ID": "C23",
+      "Question_Family_ID": "C23",
+      "Variant_ID": "V01",
+      "Topic": "Classification",
+      "Business_Domain": "Retail",
+      "Difficulty": "Difficult",
+      "Response_Type": "Multi",
+      "Question_Type": "Data Leakage",
+      "Visual_Type": "Prediction Timeline",
+      "Question_Text": "A retailer predicts whether an online order will be returned within 30 days. A candidate predictor, Return_Inspection_Result, is recorded only after the returned item reaches the warehouse. Which statements are reasonable? Select all that apply.",
+      "Options": [
+        {
+          "Option_ID": "A",
+          "Text": "The variable may introduce data leakage."
+        },
+        {
+          "Option_ID": "B",
+          "Text": "Its use could make test performance appear better than would be achievable at prediction time."
+        },
+        {
+          "Option_ID": "C",
+          "Text": "The variable should be assessed against the information available when the prediction is actually made."
+        },
+        {
+          "Option_ID": "D",
+          "Text": "A high validation score proves that the variable is appropriate."
+        }
+      ],
+      "Correct_Response": [
+        "A",
+        "B",
+        "C"
+      ],
+      "Marks": 1,
+      "Variant_Enabled": false
+    },
+    {
+      "Question_ID": "R16",
+      "Question_Family_ID": "R16",
+      "Variant_ID": "V01",
+      "Topic": "Regression",
+      "Business_Domain": "Sales",
+      "Difficulty": "Easy",
+      "Response_Type": "Single",
+      "Question_Type": "R-squared",
+      "Visual_Type": "Model Output",
+      "Question_Text": "A sales-forecasting model has R² = 0.64. Which interpretation is most appropriate?",
+      "Options": [
+        {
+          "Option_ID": "A",
+          "Text": "Approximately 64% of the variation in the target is explained by the model, under the usual R² interpretation."
+        },
+        {
+          "Option_ID": "B",
+          "Text": "64% of predictions are exactly correct."
+        },
+        {
+          "Option_ID": "C",
+          "Text": "Every prediction has an error of 36%."
+        },
+        {
+          "Option_ID": "D",
+          "Text": "The model will be correct for 64% of future observations."
+        }
+      ],
+      "Correct_Response": [
+        "A"
+      ],
+      "Marks": 1,
+      "Variant_Enabled": false
+    },
+    {
+      "Question_ID": "R17",
+      "Question_Family_ID": "R17",
+      "Variant_ID": "V01",
+      "Topic": "Regression",
+      "Business_Domain": "Energy",
+      "Difficulty": "Easy",
+      "Response_Type": "Single",
+      "Question_Type": "Calculation",
+      "Visual_Type": "Actual-vs-Predicted Table",
+      "Question_Text": "A model predicts monthly electricity demand of 480 units. Actual demand is 450 units. Using Error = Actual − Predicted, what is the error?",
+      "Options": [
+        {
+          "Option_ID": "A",
+          "Text": "+30"
+        },
+        {
+          "Option_ID": "B",
+          "Text": "−30"
+        },
+        {
+          "Option_ID": "C",
+          "Text": "+930"
+        },
+        {
+          "Option_ID": "D",
+          "Text": "−930"
+        }
+      ],
+      "Correct_Response": [
+        "B"
+      ],
+      "Marks": 1,
+      "Variant_Enabled": false
+    },
+    {
+      "Question_ID": "R18",
+      "Question_Family_ID": "R18",
+      "Variant_ID": "V01",
+      "Topic": "Regression",
+      "Business_Domain": "FMCG",
+      "Difficulty": "Moderate",
+      "Response_Type": "Multi",
+      "Question_Type": "MAE vs RMSE",
+      "Visual_Type": "Metrics Table",
+      "Question_Text": "Two forecasting models have Model A: MAE = 4.2, RMSE = 9.1 and Model B: MAE = 5.0, RMSE = 6.4. The business is particularly concerned about occasional very large errors. Which statements are reasonable? Select all that apply.",
+      "Options": [
+        {
+          "Option_ID": "A",
+          "Text": "RMSE is particularly relevant to the stated concern."
+        },
+        {
+          "Option_ID": "B",
+          "Text": "Model B has the lower RMSE."
+        },
+        {
+          "Option_ID": "C",
+          "Text": "Model A has the lower MAE."
+        },
+        {
+          "Option_ID": "D",
+          "Text": "Model A must therefore be selected."
+        }
+      ],
+      "Correct_Response": [
+        "A",
+        "B",
+        "C"
+      ],
+      "Marks": 1,
+      "Variant_Enabled": false
+    },
+    {
+      "Question_ID": "R19",
+      "Question_Family_ID": "R19",
+      "Variant_ID": "V01",
+      "Topic": "Regression",
+      "Business_Domain": "Demand Planning",
+      "Difficulty": "Moderate",
+      "Response_Type": "Multi",
+      "Question_Type": "Train/Test",
+      "Visual_Type": "Model Output",
+      "Question_Text": "A demand model has training R² = 0.94 and test R² = 0.61. Which statements are reasonable? Select all that apply.",
+      "Options": [
+        {
+          "Option_ID": "A",
+          "Text": "The difference warrants investigation."
+        },
+        {
+          "Option_ID": "B",
+          "Text": "Overfitting is one possible explanation."
+        },
+        {
+          "Option_ID": "C",
+          "Text": "Training R² alone is sufficient evidence for deployment."
+        },
+        {
+          "Option_ID": "D",
+          "Text": "Performance on unseen data is relevant."
+        }
+      ],
+      "Correct_Response": [
+        "A",
+        "B",
+        "D"
+      ],
+      "Marks": 1,
+      "Variant_Enabled": false
+    },
+    {
+      "Question_ID": "R20",
+      "Question_Family_ID": "R20",
+      "Variant_ID": "V01",
+      "Topic": "Regression",
+      "Business_Domain": "Finance",
+      "Difficulty": "Moderate",
+      "Response_Type": "Single",
+      "Question_Type": "Residual Plot",
+      "Visual_Type": "Residual Plot",
+      "Question_Text": "A residual plot shows residuals becoming increasingly spread out as fitted values increase. What does this pattern suggest?",
+      "Options": [
+        {
+          "Option_ID": "A",
+          "Text": "The residual variance may not be constant."
+        },
+        {
+          "Option_ID": "B",
+          "Text": "The model has perfect predictions."
+        },
+        {
+          "Option_ID": "C",
+          "Text": "The target must be categorical."
+        },
+        {
+          "Option_ID": "D",
+          "Text": "The model has automatically detected clusters."
+        }
+      ],
+      "Correct_Response": [
+        "A"
+      ],
+      "Marks": 1,
+      "Variant_Enabled": false
+    },
+    {
+      "Question_ID": "R21",
+      "Question_Family_ID": "R21",
+      "Variant_ID": "V01",
+      "Topic": "Regression",
+      "Business_Domain": "Retail",
+      "Difficulty": "Moderate",
+      "Response_Type": "Multi",
+      "Question_Type": "Model Selection",
+      "Visual_Type": "Metrics Table",
+      "Question_Text": "Three regression models produce: Model A: Validation RMSE = 5.1, Test RMSE = 5.4; Model B: Validation RMSE = 4.2, Test RMSE = 7.9; Model C: Validation RMSE = 5.6, Test RMSE = 5.8. Which statements are reasonable? Select all that apply.",
+      "Options": [
+        {
+          "Option_ID": "A",
+          "Text": "Model B's validation performance does not guarantee the best test performance."
+        },
+        {
+          "Option_ID": "B",
+          "Text": "Model A has the lowest test RMSE."
+        },
+        {
+          "Option_ID": "C",
+          "Text": "Test performance provides evidence about generalisation."
+        },
+        {
+          "Option_ID": "D",
+          "Text": "Model B must be selected because its validation RMSE is lowest."
+        }
+      ],
+      "Correct_Response": [
+        "A",
+        "B",
+        "C"
+      ],
+      "Marks": 1,
+      "Variant_Enabled": false
+    },
+    {
+      "Question_ID": "R22",
+      "Question_Family_ID": "R22",
+      "Variant_ID": "V01",
+      "Topic": "Regression",
+      "Business_Domain": "HR",
+      "Difficulty": "Difficult",
+      "Response_Type": "Multi",
+      "Question_Type": "Coefficients",
+      "Visual_Type": "Coefficient Plot",
+      "Question_Text": "A regression model predicts employee productivity. The coefficient for Training_Hours is +2.4, while the coefficient for Overtime_Hours is −1.1. Other variables are held constant. Which statements are reasonable? Select all that apply.",
+      "Options": [
+        {
+          "Option_ID": "A",
+          "Text": "A one-unit increase in Training_Hours is associated with a 2.4-unit increase in predicted productivity, holding other predictors constant."
+        },
+        {
+          "Option_ID": "B",
+          "Text": "The negative coefficient for Overtime_Hours indicates a negative conditional association with predicted productivity."
+        },
+        {
+          "Option_ID": "C",
+          "Text": "The coefficients alone establish that training causes higher productivity."
+        },
+        {
+          "Option_ID": "D",
+          "Text": "The units of the predictors and target matter when interpreting coefficients."
+        }
+      ],
+      "Correct_Response": [
+        "A",
+        "B",
+        "D"
+      ],
+      "Marks": 1,
+      "Variant_Enabled": false
+    },
+    {
+      "Question_ID": "CL14",
+      "Question_Family_ID": "CL14",
+      "Variant_ID": "V01",
+      "Topic": "Clustering",
+      "Business_Domain": "Retail",
+      "Difficulty": "Easy",
+      "Response_Type": "Single",
+      "Question_Type": "Business Scenario",
+      "Visual_Type": "Cluster Scatterplot",
+      "Question_Text": "A retailer has customer information but no predefined labels for customer segments. Which task is most naturally suited to clustering?",
+      "Options": [
+        {
+          "Option_ID": "A",
+          "Text": "Discover groups of customers with similar characteristics."
+        },
+        {
+          "Option_ID": "B",
+          "Text": "Predict whether a customer will churn."
+        },
+        {
+          "Option_ID": "C",
+          "Text": "Predict next month's revenue."
+        },
+        {
+          "Option_ID": "D",
+          "Text": "Calculate classification recall."
+        }
+      ],
+      "Correct_Response": [
+        "A"
+      ],
+      "Marks": 1,
+      "Variant_Enabled": false
+    },
+    {
+      "Question_ID": "CL15",
+      "Question_Family_ID": "CL15",
+      "Variant_ID": "V01",
+      "Topic": "Clustering",
+      "Business_Domain": "Consumer Goods",
+      "Difficulty": "Easy",
+      "Response_Type": "Multi",
+      "Question_Type": "K-means",
+      "Visual_Type": "K-means Diagram",
+      "Question_Text": "Which statements about K-means are reasonable? Select all that apply.",
+      "Options": [
+        {
+          "Option_ID": "A",
+          "Text": "The algorithm assigns observations to clusters based on distance to cluster centres."
+        },
+        {
+          "Option_ID": "B",
+          "Text": "Different choices of K can produce different solutions."
+        },
+        {
+          "Option_ID": "C",
+          "Text": "Cluster labels such as 1, 2 and 3 represent an inherent ranking."
+        },
+        {
+          "Option_ID": "D",
+          "Text": "Feature scaling can affect distance-based clustering."
+        }
+      ],
+      "Correct_Response": [
+        "A",
+        "B",
+        "D"
+      ],
+      "Marks": 1,
+      "Variant_Enabled": false
+    },
+    {
+      "Question_ID": "CL16",
+      "Question_Family_ID": "CL16",
+      "Variant_ID": "V01",
+      "Topic": "Clustering",
+      "Business_Domain": "Manufacturing",
+      "Difficulty": "Moderate",
+      "Response_Type": "Single",
+      "Question_Type": "Elbow Method",
+      "Visual_Type": "Elbow Plot",
+      "Question_Text": "An analyst calculates within-cluster sum of squares for K = 1 through 6. The decrease is large up to K = 3 and then becomes much smaller. What might the analyst investigate?",
+      "Options": [
+        {
+          "Option_ID": "A",
+          "Text": "K = 3 as a possible candidate solution."
+        },
+        {
+          "Option_ID": "B",
+          "Text": "K = 0 as the optimal number of clusters."
+        },
+        {
+          "Option_ID": "C",
+          "Text": "Classification accuracy at K = 3."
+        },
+        {
+          "Option_ID": "D",
+          "Text": "Regression RMSE at K = 3."
+        }
+      ],
+      "Correct_Response": [
+        "A"
+      ],
+      "Marks": 1,
+      "Variant_Enabled": false
+    },
+    {
+      "Question_ID": "CL17",
+      "Question_Family_ID": "CL17",
+      "Variant_ID": "V01",
+      "Topic": "Clustering",
+      "Business_Domain": "E-commerce",
+      "Difficulty": "Moderate",
+      "Response_Type": "Multi",
+      "Question_Type": "Scaling",
+      "Visual_Type": "Feature Range Table",
+      "Question_Text": "A customer dataset contains Annual_Spend ranging from ₹5,000–₹500,000 and Satisfaction ranging from 1–5. K-means is applied without scaling. Which statements are reasonable? Select all that apply.",
+      "Options": [
+        {
+          "Option_ID": "A",
+          "Text": "Annual_Spend may have substantial influence on Euclidean distance because of its scale."
+        },
+        {
+          "Option_ID": "B",
+          "Text": "Standardisation could change the resulting clusters."
+        },
+        {
+          "Option_ID": "C",
+          "Text": "Scaling is irrelevant to distance-based clustering."
+        },
+        {
+          "Option_ID": "D",
+          "Text": "The effect of preprocessing should be considered when interpreting the solution."
+        }
+      ],
+      "Correct_Response": [
+        "A",
+        "B",
+        "D"
+      ],
+      "Marks": 1,
+      "Variant_Enabled": false
+    },
+    {
+      "Question_ID": "CL18",
+      "Question_Family_ID": "CL18",
+      "Variant_ID": "V01",
+      "Topic": "Clustering",
+      "Business_Domain": "Marketing",
+      "Difficulty": "Moderate",
+      "Response_Type": "Multi",
+      "Question_Type": "Inertia + Silhouette",
+      "Visual_Type": "Metrics Table",
+      "Question_Text": "A customer-segmentation analysis produces the following results: K=2, Inertia=18,400, Silhouette=0.42; K=3, Inertia=10,200, Silhouette=0.56; K=4, Inertia=7,900, Silhouette=0.53; K=5, Inertia=6,800, Silhouette=0.47. Which statements are reasonable? Select all that apply.",
+      "Options": [
+        {
+          "Option_ID": "A",
+          "Text": "Inertia decreases as K increases in this example."
+        },
+        {
+          "Option_ID": "B",
+          "Text": "The silhouette score is highest at K = 3 among the solutions shown."
+        },
+        {
+          "Option_ID": "C",
+          "Text": "The inertia values alone establish that K = 5 is the best solution."
+        },
+        {
+          "Option_ID": "D",
+          "Text": "K = 3 could be investigated further because it combines relatively high silhouette with a substantial reduction in inertia."
+        }
+      ],
+      "Correct_Response": [
+        "A",
+        "B",
+        "D"
+      ],
+      "Marks": 1,
+      "Variant_Enabled": false
+    },
+    {
+      "Question_ID": "CL19",
+      "Question_Family_ID": "CL19",
+      "Variant_ID": "V01",
+      "Topic": "Clustering",
+      "Business_Domain": "Banking",
+      "Difficulty": "Difficult",
+      "Response_Type": "Multi",
+      "Question_Type": "Cluster Stability",
+      "Visual_Type": "Cluster Scatterplot",
+      "Question_Text": "A customer-segmentation solution produces four clusters. When the analysis is repeated using a different random seed, several observations move between clusters and the cluster profiles change substantially. Which statements are reasonable? Select all that apply.",
+      "Options": [
+        {
+          "Option_ID": "A",
+          "Text": "The stability of the clustering solution deserves investigation."
+        },
+        {
+          "Option_ID": "B",
+          "Text": "The solution may be sensitive to initialisation or the data."
+        },
+        {
+          "Option_ID": "C",
+          "Text": "The first solution must therefore be the correct one."
+        },
+        {
+          "Option_ID": "D",
+          "Text": "Repeated runs and additional validation could help assess robustness."
+        }
+      ],
+      "Correct_Response": [
+        "A",
+        "B",
+        "D"
+      ],
+      "Marks": 1,
+      "Variant_Enabled": false
     }
   ]
 }
