@@ -1,3 +1,4 @@
+from quiz.visuals import render_visual
 import json
 from datetime import datetime, timezone
 from pathlib import Path
@@ -185,11 +186,27 @@ st.caption(
 )
 st.markdown(q["Question_Text"])
 
+visual_html = render_visual(q)
+
+if visual_html:
+    st.iframe(visual_html, height=300)
+
 option_labels = {
-    option["Option_ID"]: option.get("Option_Text", option["Option_ID"])
+    option["Option_ID"]: option.get(
+        "Option_Text",
+        option.get("Text", option["Option_ID"])
+    )
     for option in q["Options"]
 }
+
 option_ids = list(option_labels.keys())
+
+# Display full option text to the student, but keep Option_ID
+# internally for Final_Response, scoring, and reporting.
+display_to_id = {
+    option_labels[option_id]: option_id
+    for option_id in option_ids
+}
 
 existing = q.get("Final_Response")
 if isinstance(existing, str):
@@ -197,28 +214,52 @@ if isinstance(existing, str):
 elif existing is None:
     existing = []
 
+existing_display = [
+    option_labels[x]
+    for x in existing
+    if x in option_labels
+]
+
+display_options = [
+    option_labels[option_id]
+    for option_id in option_ids
+]
+
 if q.get("Response_Type") == "Multi":
-    selected = st.multiselect(
+    selected_display = st.multiselect(
         "Your answer",
-        option_ids,
-        default=[x for x in existing if x in option_ids],
-        format_func=lambda x: option_labels[x],
+        display_options,
+        default=[
+            x for x in existing_display
+            if x in display_options
+        ],
         key=f"answer_multi_{q['Question_ID']}",
     )
+
+    selected = [
+        display_to_id[x]
+        for x in selected_display
+    ]
+
 else:
     default_index = (
-        option_ids.index(existing[0])
-        if existing and existing[0] in option_ids
+        display_options.index(existing_display[0])
+        if existing_display and existing_display[0] in display_options
         else None
     )
-    selected_one = st.radio(
+
+    selected_display = st.radio(
         "Your answer",
-        option_ids,
+        display_options,
         index=default_index,
-        format_func=lambda x: option_labels[x],
         key=f"answer_single_{q['Question_ID']}",
     )
-    selected = [] if selected_one is None else [selected_one]
+
+    selected = (
+        []
+        if selected_display is None
+        else [display_to_id[selected_display]]
+    )
 
 old_response = q.get("Final_Response")
 old_ids = (
