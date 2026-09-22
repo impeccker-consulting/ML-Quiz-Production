@@ -1,6 +1,6 @@
 {
-  "Quiz_ID": "ML_QUIZ_TEST",
-  "Quiz_Title": "ML Quiz - Local Test",
+  "Quiz_ID": "ML_QUIZ_01",
+  "Quiz_Title": "Machine Learning Business Applications — Quiz",
   "Start_DateTime": "2026-09-13T00:00:00+05:30",
   "End_DateTime": "2026-09-30T23:59:00+05:30",
   "Duration_Minutes": 25,
